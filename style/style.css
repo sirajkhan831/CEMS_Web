@@ -1,9 +1,9 @@
 * {
-  color: #05386b;
+  color: #7e685a;
   box-sizing: border-box;
 }
 .body {
-  background: #5cdb95;
+  background: #c2cad0;
 }
 .welcome-h1 {
   text-align: center;
@@ -17,13 +17,14 @@
   display: flex;
   justify-content: right;
   min-height: 2rem;
-  background: #112d32;
+  background: #88bdbc;
 }
 .h4 {
+  color: black !important;
   font-family: "Didact Gothic", sans-serif;
 }
 .h4d{
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 @media (min-width: 900px) {
@@ -45,6 +46,7 @@
   position: absolute;
   left: 16px;
   text-align: left;
+  color: rgba(0, 0, 0, 0.774) !important;
 }
 .navbar {
   padding-right: 1.4rem;
@@ -222,9 +224,7 @@ margin: auto auto;
   font-size: 1.4rem !important;
   color: whitesmoke;
 }
-.body-container{
 
-}
 .img-fluid{
   min-width: 320px;
   border-radius: 2rem;
@@ -324,9 +324,6 @@ min-width: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.text-gallery{
-  border: 1px solid #852d077c;
 }
 .locate{
   margin: auto auto !important;
@@ -436,4 +433,24 @@ display: inline;
   .main-content{
     padding-top: 2rem;
   }
+}
+.body-dark{
+  background-color: #1a1a1d;
+  color: whitesmoke !important;
+}
+.navbar-dark{
+  background: #112d32 !important;
+}
+.white{
+  color: #c5c6c7 !important;
+  border-color: whitesmoke;
+}
+#dark{
+  cursor: pointer;
+}
+.h4m{
+  color: rgba(245, 245, 245, 0.822) !important;
+}
+#dark-m:hover{
+cursor: pointer;
 }

@@ -19,7 +19,7 @@
   <div class="container-fluid check">
     <div class="row">
       <div class="col">
-        <div class="navbar navbar-pc">
+        <div class="navbar navbar-pc" id="navbar">
           <h3 class="h3 hover-underline-animation">
             Chand English Medium School</h3>
           <a href="https://cemsraipur.web.app/">
@@ -32,11 +32,11 @@
           <a href="/login.html">
             <h4 class="h4 h4d" data-aos="zoom-in" data-aos-delay="1500">Login</h4>
           </a>
-          <a href="/404.html">
-            <h4 class="h4 h4d" data-aos="zoom-in" data-aos-delay="1500">Helpdesk</h4>
+          <a onclick="dark()">
+            <h4 class="h4 h4d" id="dark" data-aos="zoom-in" data-aos-delay="1500">Dark Theme</h4>
           </a>
         </div>
-        <div class="navbar navbar-mobile">
+        <div class="navbar navbar-mobile" id="navbar-mobile">
           <h3 class="h3 hover-underline-animation" data-aos="slide-left" data-aos-duration="1500">Chand English Medium
             School</h3>
           <img src="/style/burger.png" id="bur" alt="burger" width="35px" class="burger" onclick="rotate()" data-aos="zoom-in"
@@ -57,15 +57,15 @@
         <a href="/login.html">
           <h4 class="h4 h4m">Login</h4>
         </a>
-        <a href="/404.html">
-          <h4 class="h4 h4m">Helpdesk</h4>
+        <a onclick="mobile()">
+          <h4 class="h4 h4m" id="dark-m">Dark Theme</h4>
         </a>
       </div>
     </div>
   </div>
 </nav>
 
-<body class="body">
+<body class="body" id="body">
   <div class="container-fluid main-content" style="margin-bottom: 5rem;">
     <div class="row">
       <div class="col dp">
@@ -85,7 +85,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col">
-        <h1 class="h1 text-gallery" style="text-align: center; font-family: Didact Gothic, sans-serif;">Gallery
+        <h1 class="h1 text-gallery" style="text-align: center; font-family: Didact Gothic, sans-serif; margin-top: 2rem;">Gallery
         </h1>
       </div>
     </div>
