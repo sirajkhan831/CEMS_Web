@@ -1,5 +1,11 @@
 let count = 1;
 AOS.init();
+
+function mobile() {
+    setTimeout(rotate, 600);
+    darkmode();
+}
+
 function rotate() {
     count++;
     if (count % 2 == 0) {
@@ -27,40 +33,30 @@ function rotate() {
     }
 }
 let count1 = 1;
-function dark() {
+function darkmode() {
     count1++;
-    if (count1 % 2 == 0)
-    {
-        document.getElementById('body').classList.remove('body');
-        document.getElementById('body').classList.add('body-dark');
-        // document.getElementById('navbar').classList.remove('navbar');
-        document.getElementById('navbar').classList.add('navbar-dark');
-        document.getElementById('navbar-mobile').classList.add('navbar-dark');
-        document.getElementById('dark').classList.add('white');
-        document.getElementById('dark').innerText = 'Light Theme';
-        document.getElementById('dark-m').innerText = 'Light Theme';
-        let i = 0;
-        for (i = 0; i < 10; i++){
-            document.getElementsByClassName('h4')[i].classList.add('white');
-            document.getElementsByClassName('h3')[i].classList.add('white');
-        }
+    document.getElementById('body').classList.toggle('body-dark');
+    document.getElementById('navbar').classList.toggle('navbar-dark');
+    document.getElementById('navbar-mobile').classList.toggle('navbar-dark');
+    document.getElementById('dark').classList.toggle('white');
+    if (count1 % 2 == 0) {
+        console.log(count1);
+        document.getElementById('switch').src = "/style/drag-light.png";
+        document.getElementById('drag').src = "/style/dragme-light.png";
+        document.getElementById('bur').src = "/style/burger-light.png";
     }
-    else{
-        document.getElementById('body').classList.add('body');
-        document.getElementById('body').classList.remove('body-dark');
-        // document.getElementById('navbar').classList.add('navbar');
-        document.getElementById('navbar').classList.remove('navbar-dark');
-        document.getElementById('navbar-mobile').classList.remove('navbar-dark');
-        document.getElementById('dark').classList.remove('white');
-        document.getElementById('dark').innerText = 'Dark Theme';
-        document.getElementById('dark-m').innerText = 'Dark Theme';
-        for (i = 0; i < 10; i++){
-            document.getElementsByClassName('h4')[i].classList.remove('white');
-            document.getElementsByClassName('h3')[i].classList.remove('white');
-        }
+    else {
+        console.log(count1);
+        document.getElementById('switch').src = "/style/drag-black.png"
+        document.getElementById('drag').src = "/style/dragme-black.png"
+        document.getElementById('bur').src = "/style/burger.png";
     }
-}
-function mobile(){
-    rotate();
-    dark();
+    document.getElementById('drag1').classList.toggle('drag');
+    document.getElementById('drag').classList.toggle('drag');
+    document.getElementById('drag1').classList.toggle('drag-left');
+    document.getElementById('drag').classList.toggle('drag-left');
+    for (i = 0; i < 10; i++) {
+        document.getElementsByClassName('h4')[i].classList.toggle('white');
+        document.getElementsByClassName('h3')[i].classList.toggle('white');
+    }
 }
